@@ -1,0 +1,1185 @@
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(../img/grass.png);
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    background: url(../img/66.jpg) no-repeat;
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+.container{
+    padding: 0;
+    -webkit-box-shadow: 9px 19px 44px 15px rgba(0,0,0,0.61);
+    -moz-box-shadow: 9px 19px 44px 15px rgba(0,0,0,0.61);
+    box-shadow: 9px 19px 44px 15px rgba(0,0,0,0.61);
+    background-color:#fff;
+    margin: 0 auto;
+}
+
+.nav_header {
+    background-color:rgba(124, 109, 139, 0.900);
+    display: flex;
+    height: 80px;
+    padding: 10px;
+    padding-top: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    position:fixed;
+    top:0;
+    width: 1140px;
+    z-index: 1000;
+}
+
+.div_tel {
+    color: rgba(170,216,69);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav_item {
+    color: #fff;
+    list-style: none;
+    margin-right: 30px;
+    text-decoration: none;
+    height: 25px;
+}
+
+.nav_item:hover{
+    color: rgba(170,216,69);
+    text-decoration: none;
+    border-bottom: 0.5px solid  rgba(170,216,69);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+/*******************menu********************************/
+.wrapper {
+    display: none;
+    margin: 0px auto;
+    width: 100%;
+    background-color: rgba(124, 109, 139, 0.900);
+    position: relative;
+    color:  rgba(170,216,69);
+    text-align: center;
+    height: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    border-bottom: 1px solid;
+}
+#check_menu{
+    display: none;
+}
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+}
+.burger_line{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: rgba(170,216,69);
+    transition: 0.5s all;
+}
+.second, .third {
+    top: 18px;
+    
+}
+.fourth {
+    top: 28px;
+}
+
+.main_menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.sranaya_ssilka_number1{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color:rgba(124, 109, 139, 0.900);
+    font-size: 12px;
+    border-top: 1px solid rgba(170,216,69);
+}
+.sranaya_ssilka_number1:hover{
+    transition: 0.5s;
+    color: rgba(170,216,69);
+    
+}
+.sranaya_ssilka{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color:rgba(124, 109, 139, 0.900);
+    font-size: 12px;
+
+}
+.sranaya_ssilka:hover{
+    transition: 0.5s;
+    color: rgba(170,216,69);
+    
+}
+.div_tel_menu{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: rgba(170,216,69);
+    text-decoration: none;
+    border: 1px solid  rgba(170,216,69);
+    background-color:rgba(124, 109, 139, 0.900);
+    font-size: 12px;
+}
+#check_menu:checked ~ .main_menu {
+    max-height: 500px;
+    font-size: 16px;
+}
+
+#check_menu:checked ~ .first{
+    display: none;
+}
+#check_menu:checked ~ .second{
+    transform: rotate(45deg);
+}
+#check_menu:checked ~ .third{
+    transform: rotate(-45deg);
+}
+#check_menu:checked ~ .fourth{
+    display: none;
+}
+
+
+
+.main_head_banner {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header_info {
+    text-align: center;
+    margin: 160px auto;
+    width: 75%;
+    height: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(170,216,69);
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 2px solid ;
+    border-bottom: 2px solid;
+    padding: 30px;
+    background-color:rgba(124, 109, 139, 0.900);
+}
+
+.header_info_span {
+    display: block;
+    margin-top: 50px;
+}
+
+.header_list_skil {
+    margin: 160px auto;
+    width: 75%;
+    height: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(170,216,69);
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 10px;
+    background-color:rgba(124, 109, 139, 0.900); 
+}
+
+.skil{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.fas.fa-check {
+    margin-right: 10px;
+}
+
+.pruduction {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.prod_up {
+    width: 450px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 30px;
+    color:rgba(124, 109, 139);
+    border-left: 3px solid;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.prod_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1vw;
+    margin-bottom: 40px;
+}
+
+.prod_item { 
+    border: 1px solid rgba(124, 109, 139);
+    width: 362px;
+    margin: 0 auto;
+
+}
+
+.price_item {
+    display: block;
+    color: rgba(170,216,69);
+    margin-top: 55px;
+    position: absolute;
+    background-color:rgba(124, 109, 139, 0.900);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    width: 220px;
+    height: 50px;
+    padding: 5px;
+}
+
+.prod_name {
+    display: block;
+    margin-top: -70px;
+    text-align: center;
+    color: rgba(170,216,69);
+    position: absolute;
+    background-color:rgba(124, 109, 139, 0.900);
+    width: 360px;
+    height: 70px;
+    padding: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+.info_company {
+    text-align: center;
+    background: rgba(124, 109, 139, 0.900) url(../img/brown-rocks.png);
+    background-blend-mode: soft-light;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    color: rgba(170,216,69);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h2_company {
+    display: block;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.main_company_item {
+    display: flex;
+    justify-content: center;
+}
+
+.company_item {
+    width: 216px;
+    margin-left: 40px;
+}
+
+.img_item {
+    width: 216px;
+    height: 211px;
+    border-radius: 144px;
+    margin-right: 30px;
+    border: 5px solid rgba(170,216,69);
+    margin-bottom: 20px;
+}
+
+.span_item {
+    display: block;
+    color:rgba(170,216,69);
+    text-transform: uppercase;
+}
+
+.works {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.works_up {
+    width: 450px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 30px;
+    color:rgba(124, 109, 139);
+    border-left: 3px solid;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.h2_works {
+    margin-bottom: 30px;
+    color: rgba(124, 109, 139);
+}
+
+.main_div_works {
+    margin-bottom: 30px;
+}
+.carousel-item {
+    width: 100%;
+    height: 600px;
+}
+.gallery_works {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+}
+/**************************галерея******************************/
+.big_pic {
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.big_img {
+    width: 900px;
+    height: 520px;
+    border-radius: 5px;
+    
+}
+.small_pic {
+    
+    width: 100%;
+}
+
+.small_img {
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.small_img:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    filter: none;
+}
+
+.small_img:focus{
+  outline:  1px solid rgba(124, 109, 139);
+}
+
+.about_us {
+    text-align: center;
+    background: rgba(124, 109, 139, 0.900) url(../img/brown-rocks.png);
+    background-blend-mode: soft-light;
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(170,216,69);
+}
+
+.h2_about_us {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.div_about_us {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid black;
+    background-color:  rgba(124, 109, 139);
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    padding: 50px;
+    color: rgba(170,216,69);
+    font-size: 10px;
+}
+
+.footer_tel {
+    float: left;
+}
+.made {
+    float: right;
+}
+
+
+
+/**************************************Адаптив**********************************************/
+@media(min-width:0px) and (max-width: 320px) {
+    
+    header {
+        width: 100%;
+        background: url(../img/66.jpg) no-repeat;
+        height: 600px;
+        margin-bottom: 40px;
+    }
+
+    .wrapper{
+        display: block;
+    }
+    .nav_header {
+        display: none;
+    }
+
+    .main_head_banner{
+        width: 100%;
+        height: 524px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_info{
+        width: 250px;
+        height: 220px;
+        font-weight: bold;
+        font-size: 10px;
+        margin-top: 60px;
+    }
+
+    .header_list_skil {
+        width: 250px;
+        height: 220px;
+        font-weight: bold;
+        font-size: 10px;
+        margin-top: -150px;
+    }
+
+    .prod_up{
+        width: 235px;
+        height: 70px;
+        font-size: 15px;
+    }
+
+    .prod_gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .prod_item{
+        width: 262px;
+    }
+
+    img.img_prod_gallery {
+        width: 260px;
+    }
+
+    .price_item{
+        font-size: 20px;
+        width: 160px;
+        height: 35px;
+    }
+
+    .prod_name{
+        margin-top: -60px;
+        width: 260px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .info_company{
+        height: 800px;
+    }
+
+    .h2_company{
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+
+    .company_item{
+        width: 150px;
+    }
+
+    .img_item{
+        width: 150px;
+        height: 149px;
+    }
+
+    .main_company_item{
+        display: block;
+        margin-left: 20px;
+    }
+    
+    .span_item{
+        margin-bottom: 25px;
+    }
+    .works_up{
+        width: 235px;
+        height: 70px;
+        font-size: 15px;
+    }
+
+    .carousel-item.active {
+        height: 170px;
+    }
+
+    img.d-block.w-100 {
+        width: 240px!important;
+        height: 240px!important;
+    }
+
+    .about_us{
+        height: 455px;
+        padding: 10px;
+        
+    }
+
+    .h2_about_us{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .div_about_us{
+        font-size: 15px;
+    }
+
+    footer{
+        padding: 15px;
+        height: 70px;
+    }
+    
+    .footer_tel {
+        float: none;
+    }
+
+    .made {
+        float: none;
+    }
+}
+
+@media(min-width:321px) and (max-width: 480px) {
+
+    header {
+        width: 100%;
+        background: url(../img/66.jpg) no-repeat;
+        height: 600px;
+        margin-bottom: 40px;
+    }
+    .wrapper{
+        display: block;
+    }
+
+    .nav_header {
+        display: none;
+    }
+
+    .main_head_banner{
+        width: 100%;
+        height: 524px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_info{
+        width: 250px;
+        height: 220px;
+        font-weight: bold;
+        font-size: 10px;
+        margin-top: 60px;
+    }
+
+    .header_list_skil {
+        width: 250px;
+        height: 220px;
+        font-weight: bold;
+        font-size: 10px;
+        margin-top: -150px;
+    }
+
+    .prod_up{
+        width: 235px;
+        height: 70px;
+        font-size: 15px;
+    }
+
+    .prod_gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .prod_item{
+        width: 262px;
+    }
+    
+    img.img_prod_gallery {
+        width: 260px;
+    }
+
+    .price_item{
+        font-size: 20px;
+        width: 160px;
+        height: 35px;
+    }
+
+    .prod_name{
+        margin-top: -60px;
+        width: 260px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .info_company{
+        height: 800px;
+        text-align: -webkit-center;
+    }
+
+    .h2_company{
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+
+    .company_item{
+        width: 150px;
+    }
+
+    .img_item{
+        width: 150px;
+        height: 149px;
+    }
+
+    .main_company_item{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .span_item{
+        margin-bottom: 25px;
+    }
+
+    .works_up{
+        width: 235px;
+        height: 70px;
+        font-size: 15px;
+    }
+
+    .carousel-item.active {
+        width: 100%;
+        height: 270px;
+    }
+
+    img.d-block.w-100 {
+        width: 100%!important;
+        height: 300px!important;
+    }
+
+    .about_us{
+        height: 455px;
+        padding: 10px;
+    }
+
+    .h2_about_us{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .div_about_us{
+        font-size: 15px;
+    }
+
+    footer{
+        padding: 15px;
+        height: 70px;
+    }
+
+    .footer_tel {
+        float: none;
+    }
+
+    .made {
+        float: none;
+    }
+}
+
+
+
+@media(min-width:481px) and (max-width: 768px) {
+
+    header {
+        width: 100%;
+        background: url(../img/66.jpg) no-repeat;
+        height: 600px;
+        margin-bottom: 40px;
+    }
+    .wrapper{
+        display: block;
+    }
+
+    .nav_header {
+        display: none;
+    }
+
+    .main_head_banner{
+        width: 100%;
+        height: 524px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1vw;
+        padding: 0px;
+    }
+
+    .header_info{
+        width: 100%;
+        height: 220px;
+        font-weight: bold;
+        font-size: 10px;
+        
+    }
+
+    .header_list_skil {
+        width: 100%;
+        height: 220px;
+        font-weight: bold;
+        font-size: 10px; 
+    }
+
+    .prod_up{
+        width: 235px;
+        height: 70px;
+        font-size: 15px;
+    }
+
+    .prod_gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .prod_item{
+        width: 235px;
+    }
+
+    img.img_prod_gallery {
+        width: 233px;
+    }
+
+    .price_item{
+        font-size: 18px;
+        width: 145px;
+        height: 35px;
+        margin-top: 30px;
+    }
+
+    .prod_name{
+        margin-top: -54px;
+        width: 233px;
+        height: 54px;
+        font-size: 23px;
+    }
+
+    .info_company{
+        height: 400px;
+        text-align: -webkit-center;
+    }
+
+    .h2_company{
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+
+    .company_item{
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .img_item{
+        width: 150px;
+        height: 149px;
+    }
+
+    .main_company_item{
+        display: flex;
+    }
+
+    .span_item{
+        margin-bottom: 25px;
+    }
+
+    .works_up{
+        width: 235px;
+        height: 70px;
+        font-size: 15px;
+    }
+
+    .carousel-item.active {
+        width: 100%;
+        height: 270px;
+    }
+
+    img.d-block.w-100 {
+        width: 100%!important;
+        height: 300px!important;
+    }
+
+    .about_us{
+        height: 400px;
+    }
+
+    .h2_about_us{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .div_about_us{
+        font-size: 15px;
+    }
+
+    footer{
+        padding: 15px;
+        height: 70px;
+    }
+
+    .footer_tel {
+        float: none;
+    }
+
+    .made {
+        float: none;
+    }
+}
+
+
+@media(min-width:769px) and (max-width: 992px) {
+
+    header {
+        width: 100%;
+        background: url(../img/66.jpg) no-repeat;
+        height: 600px;
+        margin-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wrapper{
+        display: block;
+    }
+
+    .nav_header {
+        display: none;
+    }
+
+    .main_head_banner{
+        width: 100%;
+        height: 524px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1vw;
+    }
+
+    .header_info{
+        width: 100%;
+        height: 255px;
+        font-weight: bold;
+        font-size: 15px;
+        
+    }
+
+    .header_list_skil {
+        width: 100%;
+        height: 255px;
+        font-weight: bold;
+        font-size: 15px;
+        
+    }
+
+    .prod_gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .prod_item{
+        width: 235px;
+    }
+
+    img.img_prod_gallery {
+        width: 233px;
+    }
+
+    .price_item{
+        font-size: 18px;
+        width: 145px;
+        height: 35px;
+        margin-top: 30px;
+    }
+
+    .prod_name{
+        margin-top: -54px;
+        width: 233px;
+        height: 54px;
+        font-size: 23px;
+    }
+
+    .info_company{
+        height: 400px;
+        text-align: -webkit-center;
+    }
+
+    .h2_company{
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+
+    .company_item{
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .img_item{
+        width: 150px;
+        height: 149px;
+    }
+
+    .main_company_item{
+        display: flex;
+    }
+
+    .span_item{
+        margin-bottom: 25px;
+    }
+
+    .carousel-caption.d-none.d-md-block {
+        color: rgba(170,216,69);
+        background-color: rgba(124, 109, 139, 0.900);
+        border-radius: 35px;
+    }
+
+    h5{
+        font-size-adjust: 17px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .carousel-item.active {
+        width: 100%;
+        height: 400px;
+    }
+
+    img.d-block.w-100 {
+        width: 100%!important;
+        height: 400px!important;
+    }
+
+    .about_us{
+        height: 400px;
+    }
+
+    .h2_about_us{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .div_about_us{
+        font-size: 15px;
+    }
+
+    footer{
+        padding: 15px;
+        height: 70px;
+    }
+
+    .footer_tel {
+        float: none;
+    }
+    
+    .made {
+        float: none;
+    }
+}
+
+
+@media(min-width:993px) and (max-width: 1200px) {
+
+    header {
+        width: 100%;
+        background: url(../img/66.jpg) no-repeat;
+        height: 600px;
+        margin-bottom: 40px;
+    }
+
+    .nav_header {
+        width: 960px;
+    }
+
+    .main_head_banner{
+        width: 100%;
+        height: 524px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1vw;
+    }
+
+    .header_info{
+        font-weight: bold;
+    }
+
+    .header_list_skil {
+        font-weight: bold;
+    }
+
+    .prod_gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .prod_item{
+        width: 235px;
+    }
+
+    img.img_prod_gallery {
+        width: 233px;
+    }
+
+    .price_item{
+        font-size: 18px;
+        width: 145px;
+        height: 35px;
+        margin-top: 30px;
+    }
+
+    .prod_name{
+        margin-top: -54px;
+        width: 233px;
+        height: 54px;
+        font-size: 23px;
+    }
+
+    .info_company{
+        height: 400px;
+        text-align: -webkit-center;
+    }
+
+    .h2_company{
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+
+    .company_item{
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .img_item{
+        width: 200px;
+        height: 198px;
+    }
+
+    .main_company_item{
+        display: flex;
+    }
+
+    .span_item{
+        margin-bottom: 25px;
+        margin-left: 30px;
+    }
+
+    .carousel-caption.d-none.d-md-block {
+        color: rgba(170,216,69);
+        background-color: rgba(124, 109, 139, 0.900);
+        border-radius: 35px;
+    }
+
+    h5{
+        font-size-adjust: 17px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .carousel-item.active {
+        width: 100%;
+        height: 600px;
+    }
+
+    img.d-block.w-100 {
+        width: 100%!important;
+        height: 600px!important;
+    }
+    .about_us{
+        height: 400px;
+    }
+    .h2_about_us{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .div_about_us{
+        font-size: 15px;
+    }
+
+    footer{
+        padding: 15px;
+        height: 70px;
+    }
+
+    .footer_tel {
+        float: none;
+    }
+
+    .made {
+        float: none;
+    }
+}
